@@ -1,4 +1,4 @@
-# BackTix
+# Quay lạiTix
 
 > Ứng dụng bán vé và sự kiện mã nguồn mở
 
@@ -79,7 +79,7 @@ Tóm tắt các tính năng chính của ứng dụng:
     -   [NestJS 10](https://nestjs.com/)Bản đánh máy
     -   Prisma ORM
     -   PostgreSQL
-    -   Làm lại
+    -   làm lại
     -   Swagger(tài liệu API)
 
 -   Web bảng quản trị (Monorepo với dịch vụ API)
@@ -106,9 +106,9 @@ Tóm tắt các tính năng chính của ứng dụng:
   <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
 </a>
 
-## Cài đặt &_Cách chạy_
+## Cài đặt &_Làm thế nào để chạy_
 
-[Dịch vụ API phía sau](docs/api-service.md)
+[Dịch vụ API phụ trợ](docs/api-service.md)
 
 [Bảng quản trị](docs/admin-panel.md)
 
