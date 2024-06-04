@@ -38,15 +38,15 @@
 
 ### सिस्टम आवश्यकताएं
 
-इंस्टॉलेशन शुरू करने से पहले सुनिश्चित करें कि आपका सिस्टम निम्नलिखित आवश्यकताओं को पूरा करता है:
+सुनिश्चित करें कि आपका सिस्टम इंस्टॉलेशन शुरू करने से पहले निम्नलिखित आवश्यकताओं को पूरा करता है:
 
 -   Node.js v18 या उच्चतर
--   PostgreSQL 15 या उच्चतर
+-   Postgresql 15 या उच्चतर
 -   रेडिस v5 या उच्चतर
 
 ### स्थापना चरण
 
-1.  क्लोन/एक्सट्रेक्ट रिपॉजिटरी
+1.  क्लोन/एक्सट्रैक्ट रिपॉजिटरी
 
 2.  निर्भरताएँ स्थापित करें:
 
@@ -69,23 +69,23 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   आवश्यक तालिकाएँ बनाने के लिए माइग्रेशन चलाएँ
+-   आवश्यक तालिकाओं को बनाने के लिए माइग्रेशन चलाएं
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   उपयोगकर्ता बनाने के लिए डेटाबेस सीडर चलाएँ`superadmin`
+-   उपयोगकर्ता बनाने के लिए डेटाबेस सीडर चलाएं`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### स्थापित करना**गूगल साइन इन करें**सर्वर और क्लाइंट आईडी
+#### स्थापित करना**गूगल साइन इन करें**सर्वर और ग्राहक आईडी
 
--   पर एक नया प्रोजेक्ट बनाएं[गूगल क्लाउड कंसोल](https://console.cloud.google.com/projectcreate)
+-   पर एक नई परियोजना बनाएं[गूगल क्लाउड कंसोल](https://console.cloud.google.com/projectcreate)
 
--   एक बार जब आप प्रोजेक्ट बनाना पूरा कर लें, तो उसे चुनें`APIs & Services`, फिर चुनें`OAuth consent screen`बायीं तरफ पर
+-   एक बार जब आप एक परियोजना बना लेते हैं, तो इसे चुनें`APIs & Services`, फिर चुनें`OAuth consent screen`बायीं तरफ पर
 
 -   एप्लिकेशन का नाम, ईमेल और दर्ज करें`Developer contact information`
 
@@ -93,12 +93,12 @@ npm run db:seed
 
 -   **सर्वर**ग्राहक ID
 
-    -   चुनना`Credentials`बाएँ साइडबार में, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
+    -   चुनना`Credentials`बाएं साइडबार में, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   चुनना`Web application`आवेदन प्रकार, बेरी नामा लालू सहेजें/बनाएं
+-   चुनना`Web application`एप्लिकेशन प्रकार, बेरी नाम लालू सहेजें/बनाएं
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
@@ -114,7 +114,7 @@ npm run db:seed
 
     -   `CREATE CREDENTIALS`वापस, चयन करें`OAuth client ID`
 
-    -   चुनना`Web application`आवेदन का प्रकार, एक नाम दें और`Authorized JavaScript origins`चित्र के अनुसार (यदि लोकलहोस्ट का उपयोग कर रहे हैं), तो सहेजें/बनाएँ
+    -   चुनना`Web application`अनुप्रयोग प्रकार, एक नाम दें और`Authorized JavaScript origins`चित्र में के रूप में (यदि लोकलहोस्ट का उपयोग कर रहा है), तो सहेजें/बनाएं
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
@@ -126,11 +126,11 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   क्लिक`DOWNLOAD JSON`और क्लाइंट आईडी सेव करें। वेब क्लाइंट आईडी का उपयोग फ़्लटर मोबाइल ऐप में किया जाएगा।
+    -   क्लिक`DOWNLOAD JSON`और क्लाइंट आईडी को सहेजें। वेब क्लाइंट आईडी का उपयोग फ्लूट मोबाइल ऐप में किया जाएगा।
 
 #### मिडट्रांस सर्वर और क्लाइंट कुंजी सेटअप करें
 
--   जाओ[डैशबोर्ड मिडट्रांस](https://dashboard.midtrans.com/), पर्यावरण का चयन करें`sandbox`(अनुशंसित) अताउ`production`
+-   जाओ[डैशबोर्ड मिडट्रान्स](https://dashboard.midtrans.com/), पर्यावरण का चयन करें`sandbox`(अनुशंसित) अताऊ`production`
 -   में दर्ज`Settings`>`Access Keys`, लालू सलीन क्लाइंट डान सर्वर कीय के फाइल`.env`
 
 ```sh
@@ -153,7 +153,7 @@ MIDTRANS_CLIENT_KEY=
 npm run metadata --workspace=@backtix-service/api
 ```
 
-2.  ऐप चलाएँ
+2.  रन ऐप
 
 ```bash
 npm run start
@@ -165,9 +165,9 @@ npm run start
 npm run start:dev
 ```
 
-2.  स्वैगर एपीआई दस्तावेज़
+2.  स्वैगर एपीआई डॉक्स
 
--   http&#x3A;//localhost:3000/api/docs खोलें (आधार यूआरएल समायोजित करें)
+-   खुला http&#x3A; // localhost: 3000/एपीआई/डॉक्स (आधार url समायोजित करें)
 
 3.  परीक्षण (वैकल्पिक)
 
