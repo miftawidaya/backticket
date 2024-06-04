@@ -31,7 +31,7 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-يتضمن تطبيق لوحة الإدارة
+ويتضمن تطبيق لوحة الإدارة
 
     apps/api
     apps/admin-panel
@@ -75,7 +75,7 @@ DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=pub
 npx prisma migrate deploy
 ```
 
--   قم بتشغيل بذارة قاعدة البيانات لإنشاء المستخدمين`superadmin`
+-   قم بتشغيل بذارة قاعدة البيانات لإنشاء مستخدمين`superadmin`
 
 ```bash
 npm run db:seed
