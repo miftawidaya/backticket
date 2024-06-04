@@ -156,7 +156,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
         ![Terminal](/assets/Screenshot_5.png)
 
-    -   Ir a[Consola de Google Cloud](https://console.cloud.google.com)
+    -   Ir a[Consola de la nube de Google](https://console.cloud.google.com)
 
         ![Cloud Console](/assets/Screenshot_2.png)
 

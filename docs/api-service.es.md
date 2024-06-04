@@ -75,7 +75,7 @@ DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=pub
 npx prisma migrate deploy
 ```
 
--   Ejecute el sembrador de base de datos para crear usuarios`superadmin`
+-   Ejecute el sembrador de base de datos para crear usuarios.`superadmin`
 
 ```bash
 npm run db:seed
@@ -83,7 +83,7 @@ npm run db:seed
 
 #### Configuración**Iniciar sesión en Google**ID de servidor y cliente
 
--   Crear un nuevo proyecto en[Consola de Google Cloud](https://console.cloud.google.com/projectcreate)
+-   Crear un nuevo proyecto en[Consola de la nube de Google](https://console.cloud.google.com/projectcreate)
 
 -   Una vez que haya terminado de crear un proyecto, selecciónelo`APIs & Services`, luego seleccione`OAuth consent screen`En el lado izquierdo
 
